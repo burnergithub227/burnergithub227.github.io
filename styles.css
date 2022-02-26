@@ -6,6 +6,11 @@
 	--midbrown: #d9a279;
 }
 
+@font-face {
+	font-family: 'Comic Sans MS';
+	src: url("comic-sans-ms/comici.ttf");
+  }
+
 .footbackground {
 	background-image: url(foot.jpg);
 }
@@ -98,7 +103,7 @@ input[type = text], input[type = datetime-local], input[list = special], input[t
 
 input[type = range]{
 	width: 200px;
-	margin: 10px 0px;s
+	margin: 10px 0px;
 }
 
 input[type = color] {
