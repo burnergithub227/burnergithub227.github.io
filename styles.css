@@ -1,0 +1,177 @@
+
+:root{
+	--pastelblue: #d4f9ff;
+	--darkbrown: #59361c;
+	--lightbrown:  #d4986a;
+	--midbrown: #d9a279;
+}
+
+.footbackground {
+	background-image: url(foot.jpg);
+}
+
+body {
+	font-family: cursive;
+	color: #805d44;
+	text-align: center;
+}
+
+nav {
+	font-size: 18px;
+}
+
+label {
+	display: inline-block;
+	width: 200px;
+}
+
+label:hover {
+	color: #d4986a
+}
+
+ul {
+	list-style-image: url(favicon-16x16.png);
+	list-style-position: inside;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+
+h1 {
+	color: #d9a279; /** slightly darker light brown**/
+	background-color:#d4f9ff; /**pastel blue**/
+	border: 5px ridge #d4f9ff;
+	font-size: 38px;
+	border-radius: 25px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #d4986a /**light brown**/
+}
+
+a:hover {
+	color:#d4f9ff;
+}
+
+h2 {
+	color: #59361c; /**darker brown**/
+	font-size: 35px;
+}
+
+table {
+	margin: auto;
+}
+
+th {
+	font-size: 20px;
+	padding: 8px;
+}
+
+td {
+	padding: 2px;
+	text-align: center;
+}
+
+caption {
+	font-size: 24px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+label {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+	margin-right: 8px;
+}
+
+input[type = text], input[type = datetime-local], input[list = special], input[type = number] {
+	width: 200px;
+	padding: 15px;
+	border-radius: 30px;
+	border: 3px solid var(--midbrown);
+}
+
+input[type = range]{
+	width: 200px;
+	margin: 10px 0px;s
+}
+
+input[type = color] {
+	width: 150px;
+	margin: 10px 0px;
+}
+
+input[type = submit] {
+	width: 200px;
+	background-color: var(--pastelblue);
+	border: 5px ridge var(--pastelblue);
+	padding: 15px;
+	cursor: pointer;
+	border-radius: 15px;
+	color: var(--darkbrown);
+	font-family: cursive;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input[type = submit]:hover {
+	filter: brightness(1.2);
+	color: var(--lightbrown);
+}
+
+#tierlisttitle {
+	font-size: 20px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#where {
+	font-size: 24px;
+	transition: color 0.5s, font-size 1s;
+	transition-timing-function: ease-in-out;
+}
+
+#where:hover { 
+	color: red;
+	font-size: 50px;
+}
+
+#firsttier:hover {
+	color: gold;
+}
+
+#firsttier {
+	color: #805d44;
+}
+
+#hypnosis {
+	width: 500px;
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#mahayfeet {
+	animation-name: enlarge;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes enlarge {
+	from{width: 10px;}
+	to{width: 600px;}
+}
+
+@keyframes spin{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(90deg);}
+	50%{transform: rotate(180deg);}
+	75%{transform: rotate(270deg);}
+	100%{transform: rotate(360deg);}
+}
