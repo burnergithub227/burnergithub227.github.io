@@ -148,6 +148,7 @@ input[type = submit]:hover {
 
 #firsttier:hover {
 	color: gold;
+	cursor: pointer;
 }
 
 #firsttier {
@@ -164,7 +165,7 @@ input[type = submit]:hover {
 
 #mahayfeet {
 	animation-name: enlarge;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	animation-timing-function: ease-in-out;
 }
 
