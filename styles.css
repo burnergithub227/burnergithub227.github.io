@@ -16,7 +16,7 @@
 }
 
 body {
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-family: "Comic Sans MS", "Comic Sans", "Open Sans";
 	color: #805d44;
 	text-align: center;
 }
@@ -119,7 +119,7 @@ input[type = submit] {
 	cursor: pointer;
 	border-radius: 15px;
 	color: var(--darkbrown);
-	font-family: cursive;
+	font-family: "Comic Sans MS", "Comic Sans", "Open Sans";
 	font-size: 15px;
 	font-weight: bold;
 }
