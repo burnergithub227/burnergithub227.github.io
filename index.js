@@ -45,6 +45,7 @@ function generateGallery(imageUrls) {
       img.src = url;
       img.alt = `Image ${index + 1}`;
       img.style.width = '25vw';
+      img.style.height = 'auto'
 
       // Append image to its container
       imgContainer.appendChild(img);

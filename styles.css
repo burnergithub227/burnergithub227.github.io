@@ -33,7 +33,7 @@
 
 .image-container img {
     width: auto; /* Ensure images fill their containers */
-    height: 100%; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
 
 button {
