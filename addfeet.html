@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CFFC</title>
-	<link rel="icon" href="favicon-32x32.png">
+	<link rel="icon" href="assets/favicon-32x32.png">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -25,30 +25,9 @@
 	<main>
 		<h2>Add Feet</h2>
 		<section>
-			<form action = "memepage.html", method = "GET" >
 				<div>
 					<label for = "name">Name of beholder:</label>
 					<input type="text" name="name" id = "name" placeholder="foot name">
-				</div>
-
-				<div>
-					<label for="age">What is their age? If they're older than 49, DO NOT POST. thats gross </label>
-					<input type="number" name="age" id="age" max="49">
-				</div>
-				
-				<div>
-					<label for = "foot size">Foot size:</label>
-					<input type="text" name="footSize" id = "foot size" placeholder="what is their foot size">
-				</div>
-				
-				<div>
-					<label for="datetime">When was this taken? Fresh foot pics only.</label>
-					<input type="datetime-local" name="datetime" id="datetime" min="2022-01-01T00:00">
-				</div>
-
-				<div>
-					<label for="footcolor">What color is their foot?</label>
-					<input type="color" name="footcolor" id="footcolor">
 				</div>
 
 				<div>
@@ -60,23 +39,22 @@
 
 				<div>
 					<label for="pic">Upload Picture:</label>
-					<input type="file" name="picture" id="pic">
+					<input type="file" name="picture" id="fileInput" accept="image/*">
 				</div>
-				
 
 				<div>
-					<input type="submit" value="POST FEET">
+					<button id="submit">POST FEET</button>
 				</div>
 				<br>
-			</form>
 		</section>
 	</main>
 
 	<footer>
 		<br>
-		<cite>By Christian Kim 2022&copy</cite> <br>
+		<cite>By Christian Kim 2024&copy</cite> <br>
 		<a href="https://www.youtube.com/channel/UCXuqY-oYKWfrs4oqRKLPd-w/featured" target="_blank">Youtube Channel</a> <br>
-		<img src="foot.jpg" width="200" height="50">
+		<img src="assets/foot.jpg" width="200" height="50">
 	</footer>
 </body>
+<script type="module" src = "addfeet.js"></script>
 </html>

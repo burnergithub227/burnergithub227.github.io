@@ -8,11 +8,46 @@
 
 @font-face {
 	font-family: 'Comic Sans MS';
-	src: url("comic-sans-ms/comici.ttf");
+	src: url("assets/design.graffiti.comicsansms.ttf");
   }
 
 .footbackground {
 	background-image: url(foot.jpg);
+}
+
+.gallery-row {
+    display: flex; /* Use flexbox to align images horizontally */
+    justify-content: center; /* Distribute space between images */
+    margin-bottom: 20px; /* Add some margin between rows */
+}
+
+.image-container {
+/* Each image container takes up 45% of the row width */
+    position: relative; /* Position relative for absolute positioning of frame */
+    border-radius: 20px; /* Add rounded corners to the image container */
+    overflow: hidden; /* Hide overflowing frame */
+	border: 15px solid #d4f9ff;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.image-container img {
+    width: auto; /* Ensure images fill their containers */
+    height: 100%; /* Maintain aspect ratio */
+}
+
+button {
+	background-color: #805d44;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #d4986a /**light brown**/
 }
 
 body {
